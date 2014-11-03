@@ -1,4 +1,7 @@
 package Ueb6;
+
+import Prog1Tools.IOTools;
+
 public class Sortierung {
 
   public static void main (String[] args) {
@@ -7,12 +10,13 @@ public class Sortierung {
     int[] zahl;
 
     // Eingabe
-    count = args.length;
+    count = IOTools.readInteger( "Wie viele Zahlen willst Du sortieren? ");
 
     zahl = new int[count];
 
-    for (int i = 0; i < args.length; i++)
-      zahl[i] = Integer.parseInt(args[i]);
+    for (int i = 0; i < zahl.length; i++)
+        zahl[i] = IOTools.readInteger( (i+1) + ". Zahl: " );
+
 
     java.util.Arrays.sort( zahl ); // wegen der import-Anweisung brauchen wir keinen Vollqualifizierten Namen
 

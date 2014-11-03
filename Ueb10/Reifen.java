@@ -2,7 +2,7 @@ package Ueb10;
 
 class Reifen {
 
-	  /** Reifendruck */
+	  /** Reifendruck  */
 	  private double druck;
 
 	  /** Konstruktor */
