@@ -1,0 +1,14 @@
+Eine Autovermietung vermietet PKW und LKW. Jedes Fahrzeug ist durch das KFZ-Kennzeichen, 
+den KM-Stand und die seit der letzten Inspektion geleisteten KM beschrieben.
+Bei LKW ist die Nutzlast ein weiteres Merkmal. 
+Zusätzlich gibt es eine Kennzeichnung, ob ein Fahrzeug zur Zeit vermietet ist. 
+Bei Rückgabe eines Fahrzeuges wird aus der Mietdauer (in Tagen) der Rechnungsbetrag und aus der Zahl 
+der gefahrenen Kilometer der aktuelle KM-Stand ermittelt. 
+Außerdem wird kontrolliert, ob eine Inspektion fällig ist. 
+Bei PKW wird alle 30000, bei LKW alle 20000 km eine Inspektion durchgeführt. 
+Der Mietpreis beträgt für PKW 30 Euro pro Tag, für LKW mit einer Nutzlast über 1800 kg 80 Euro pro Tag, 
+für kleinere LKW 50 Euro pro Tag. PKW werden nach jeder Vermietung gewaschen. 
+a)  Modellieren Sie diese Problemstellung durch geeignete Klassen und Methoden in Java. Falls für eine Aktion keine Details bekannt sind,
+ lassen Sie den Methodenrumpf leer oder geben Sie eine passende Meldung auf den Bildschirm aus.  
+ 
+b) Erweitern Sie das Beispiel: die Autovermietung möchte die Zahl der verfügbaren PKW und die der verfügbaren LKW abrufen können. 
