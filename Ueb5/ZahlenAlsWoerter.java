@@ -1,8 +1,9 @@
 package Ueb5;
+import Prog1Tools.IOTools;
 public class ZahlenAlsWoerter{
 
 	public static void main(String arg[]) {
-		int zahl = 3245;
+		int zahl = IOTools.readInteger("Eingabe ");;
 		int rest;
 		String ziffer = "";
 		while(zahl != 0) {

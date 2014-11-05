@@ -1,4 +1,5 @@
 package Ueb4;
+import Prog1Tools.IOTools;
 public class Sekundenzerlegung {
 
 
@@ -6,7 +7,7 @@ public class Sekundenzerlegung {
 
 		int sec, jahre, tage, stunden, minuten, sekunden;
 
-		sec = 100000000;
+		sec = IOTools.readInteger("Eingabe: ");
 		System.out.println( sec + " Sekunden entsprechen:" );
 
 		jahre    = sec / (365*3600*24);

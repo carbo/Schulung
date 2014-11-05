@@ -1,4 +1,4 @@
-package Ueb10;
+:wpackage Ueb10;
 
 class Reifen {
 

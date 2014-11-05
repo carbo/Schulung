@@ -2,8 +2,10 @@ package Ueb3;
 public class Casting {
 	public static void main(String arg[]) {
 		// lokale Variablen
+		final int b;
+		b = 5;
 		double myDouble1 = 2147483642d;
-		double myDouble2 = 2147483647d;
+		double myDouble2 = 2147483647;
 		double myDouble3 = 2147483648d;
 		int a = 32769;
 		int myInt1, myInt2, myInt3;

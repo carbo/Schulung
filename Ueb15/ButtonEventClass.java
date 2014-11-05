@@ -1,4 +1,4 @@
-package Ueb15;
+:qpackage Ueb15;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
