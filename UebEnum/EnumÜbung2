@@ -1,0 +1,6 @@
+Schreiben Sie eine Aufzählungstyp Zielflughafen mit den Werten New York, Hamburg, Rio de Janeiro, Moskau.
+Die Klasse(Aufzählungstyp) soll Auskunft darüber geben, wie lange ein Flug von Frankfurt zum Zielflughafen dauert. 
+Arbeiten Sie mit einem eigenen Konstruktor.
+In einer zusätzlichen Klasse(Name frei wählbar) zeigen Sie an, 
+wie lange ein Flug von Frankfurt nach New York dauert sowie ein Flug von Frankfurt nach Moskau.
+Geben Sie ebenfalls eine Liste heraus für alle Flüge und deren Dauer(absteigend).

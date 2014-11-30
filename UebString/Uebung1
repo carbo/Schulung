@@ -1,0 +1,4 @@
+Schreiben Sie ein Programm, dass einen String rückwärts ausgibt, also aus „Ich mag Java“ wird „avaJ gam hcI“. Und zwar auf drei Arten.
+1. Durch Benutzung der Klasse StringBuffer
+2. Durch Benutzung der Klasse StringBuilder
+3. Nur durch Benutzung der Klasse String
