@@ -1,0 +1,11 @@
+Schreiben Sie eine Methode deleteDigits(), die alle Ziffern aus einem String entfernt.
+
+Schreiben Sie eine Methode deleteAllBlanks(), die alle Leerzeichen aus einem String entfernt.
+
+Schreiben Sie eine Methode deleteChar(), die bestimmte Zeichen aus einem String entfernt.
+
+Schreiben Sie eine Methode charCount(), die zählt, wie oft ein bestimmtes Zeichen in einem String vorkommt. Die Methode bekommt einen String s und ein char ch übergeben und zählt, wie oft ch in s vorkommt. Kommt ch nicht in s vor, so wird 0 zurückgegeben.
+
+Schreiben Sie eine Methode wordCount(), die zählt, wie oft ein bestimmtes Wort (Teilstring) in einem Text (String) vorkommt. Die Methode bekommt zwei Parameter vom Typ String übergeben. Der erste Parameter ist der Textstring, der zweite String stellt des Wort dar, dessen Vorkommen gezählt werden soll. Kommt das Wort nicht, so wird 0 zurückgegeben.
+
+Legen Sie ein Klasse StringUtil an, die obige Methoden als statische Methoden enthält.
