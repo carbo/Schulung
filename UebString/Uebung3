@@ -1,0 +1,12 @@
+Bei der so genannten Cäsar-Verschlüsselung verschiebt man jedes Zeichen um vier Positionen im Alphabet,
+das heißt, aus A wird D, aus B wird E und so weiter. 
+Am Ende des Alphabets beginnen wir wieder von vorne 
+und so ergibt X->A, Y->B,Z->C.
+
+Implementiere eine Methode String 
+caesar(String s, int rotation), 
+die die Verschlüsselung vornimmt, 
+und String decaesar(String s, int rotation), 
+die sie wieder zurücknimmt. 
+rotation ist dabei die Verschiebung, d
+ie beliebig sein sollte.
