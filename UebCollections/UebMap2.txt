@@ -1,0 +1,23 @@
+Entwickle eine Klasse Autos, mit der man Autokennzeichen von Autofahrern verwalten kann. Fülle die folgende Klasse sinnvoll aus:
+
+class Autos {
+  Map autos = ...
+
+  /**
+   * Speichert Vorname und Autokennzeichen wie [Angela, B-BK-123].
+   */
+  void add( String name, String email ) {
+  }
+
+  /**
+   * Sucht nach dem Kennzeichen mit dem exakten Namen.
+   */
+  String lookup( String name ) {
+  }
+
+  /**
+   * Gibt alle Schlüssel-/Wertepaare auf dem Bildschirm (System.out) aus.
+   */
+  void list() {
+  }
+}

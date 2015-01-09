@@ -1,0 +1,11 @@
+1.)Gegeben sei ein eindimensionales String Array wie folgt:
+String[] cars = {"mercedes", "alpha romeo", "bmw"};
+
+Überführen sie das String array jeweils in eine HashSet, ein LinkedHashSet und ein Treeset.
+Geben Sie die erstellten Sets über die Konsole aus und machen Sie Aussagen über die 
+Sortierung der Elemente.
+
+2.)Nehmen Sie diese drei Implementierungen des Set Interface und überprüfen wie schnell 
+sich 10.000.000 Integer-Elemente einfügen lassen.
+Die gegenwärtige Zeit bekommen Sie mit System.currentTimeMillis.
+Und für die Ausgabe nutzen Sie folgendes Format mm:ss:SSS(SimpleDateFormat).

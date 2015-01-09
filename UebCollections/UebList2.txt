@@ -1,0 +1,11 @@
+Schreiben Sie ein kleines Programm, welches folgenden Output generiert.
+Benutzen Sie eine Liste Ihrer Wahl(ArrayList, LinkedList).
+Durchstöbern Sie auch die Dokumentation der Klassen und schauen, ob es eventuell mehrere 
+Möglichkeiten gibt, um dieses zu realisieren.
+[First, Second, Third, Random]
+After push operation:
+[first element, First, Second, Third, Random]
+After removeFirst operation:
+[First, Second, Third, Random]
+
+Sortieren Sie die Liste alphabetisch und geben Sie sie erneut aus.
