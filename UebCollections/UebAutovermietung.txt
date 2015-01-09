@@ -1,0 +1,49 @@
+Ändern Sie Ihre Autovermietungsprogramm so, dass die Synchronisation der vermieteten bzw.
+verfuegbaren Autos über Listen erfolgt.
+
+Versuchen Sie also auf die Attribute boolean frei in der KFZ Klasse sowie auf die statische Variablen
+in der PKW bzw LKW Klasse zu verzichten.
+
+Die Ausgabe des Programms soll bei Aufruf von:
+zeigeVerfuegbare () ; 
+	p1.vermieten () ;
+	zeigeVerfuegbare();
+	p1.vermieten();
+	zeigeVerfuegbare();
+	p1.zurueckgeben(2, 120);
+	zeigeVerfuegbare();
+	l1.vermieten();
+	zeigeVerfuegbare();
+	l1.zurueckgeben(3, 1800);
+	zeigeVerfuegbare();
+	l1.vermieten();
+	zeigeVerfuegbare();
+	l1.zurueckgeben(1, 100);
+	zeigeVerfuegbare();
+	
+wie folgt bleiben:
+
+	frei: 2 PKW und 1 LKW
+P−KW 1 wird vermietet
+
+frei: 1 PKW und 1 LKW
+P−KW 1 ist bereits vermietet
+
+frei: 1 PKW und 1 LKW
+Rechnungsbetrag: 60
+P−KW 1 wird gewaschen
+
+frei: 2 PKW und 1 LKW
+L−KW 1 wird vermietet
+
+frei: 2 PKW und 0 LKW
+Rechnungsbetrag: 150
+Inspektion durchfuehren
+
+frei: 2 PKW und 1 LKW
+L−KW 1 wird vermietet
+
+frei: 2 PKW und 0 LKW
+Rechnungsbetrag: 50
+
+frei: 2 PKW und 1 LKW
