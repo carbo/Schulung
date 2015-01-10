@@ -1,0 +1,30 @@
+public class Kaefig<T> {
+    private T einTier;
+    public void setTier(T x) {
+        einTier = x;
+    }
+    public T getTier() {
+        return einTier;
+    }
+}
+ 
+public class Tier{ }
+public class Hund extends Tier { }
+public class Vogel extends Tier { }
+
+Beschreiben Sie was mit dem folgenden Code geschieht. Die Möglichkeiten sind
+
+	- er übersetzt nicht
+	- er übersetzt mit Warnungen
+	- er erzeugt Fehler während der Ausführung
+	- er übersetzt und läuft ohne Probleme
+	
+Kaefig<Tier> zwinger = new Kaefig<Hund>();
+
+Kaefig<Vogel> voliere = new Kaefig<Tier>();
+
+Kaefig<?> voliere = new Kaefig<Vogel>();
+voliere.setTier(new Vogel());
+
+Kaefig voliere = new Kaefig();
+voliere.setTier(new Vogel());

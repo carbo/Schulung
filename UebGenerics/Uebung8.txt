@@ -1,0 +1,15 @@
+In diesem Beispiel werden Flaschen mit verschiedenen Getränken gefüllt und entleert. 
+Das Befüllen und Entleeren erfolgt in der main() Methode der Klasse Flasche.
+
+Die vorliegende Implementierung erlaubt das Befüllen der Flaschen f1 und f2 
+mit beliebigen Getränken.
+
+Aufgabe:
+
+Ändern Sie die Implementierung der Klasse Flasche in eine generische Klasse 
+die für unterschiedliche Getränke parametrisiert werden kann.
+
+passen Sie alle Methoden der Klasse Flasche so an das sie mit 
+einem parametrisierten Getränk befüllt werden können (Bier oder Wein)
+Ändern Sie die main() Methode derart, dass f1 nur mit Bier befüllt werden kann 
+und f2 nur mit Wein.

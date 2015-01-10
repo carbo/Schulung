@@ -1,0 +1,29 @@
+Erstellen Sie eine Klasse GenericTypmitWildcard<T>, 
+die das gleiche Instanzfeld und die gleichen Methoden wie die Klasse GenericTyp1 
+aus der Aufgabe 8.1 besitzt.
+Definieren Sie für diese Klasse eine zusätzliche Klassenmethode anzeige() 
+und benutzen Sie in Ihrer Deklaration Wildcardtypen, 
+um damit die von allen Instanzen der Klasse mit den unterschiedlichen Typen Integer,
+Float und Double aufgenommenen Objekte anzeigen zu können.
+
+Hinweise für die Programmierung:
+Dass bei der Verwendung eines parametrisierten Datentyps später nur Objekte 
+des beim Erzeugen einer Instanz der Klasse verwendeten Datentyps genutzt 
+werden können, 
+wäre ohne Erweigerungsmöglichkeiten eine Einschränkung gegenüber 
+vorherigen Versionen von Java. 
+Wildcards können aber nicht in Klassendefinitionen verwendet werden, 
+eine Klassendeklaration mit class GenericTypmitWildcard<?> 
+führt zum Compilerfehler "Identifier expected". 
+Sie können als Platzhalter in der Definition von Referenzen vom Typ 
+der KLasse genutzt werden, 
+die Referenzen von Instanzen der Klasse von einem bestimmten Typ zugewiesen 
+bekommen, oder als Rarameter bzw. Rückgabewert in Methodendefinitionen dienen.
+
+Einer Referenzvariablen vom Typ <?> kann die Referenz einer Instanz 
+der Klasse von einem beliebigen Typ zugewiesen werden, 
+nur kann auf diese im Nachhinein nicht schreibend zugegriffen werden.
+Weil der Compiler den Typ, den man hinzufügen möchte, nicht erkennt, 
+führt dies zu einem Compilerfehler. 
+Ein lesbarer Zugriff wird jedoch erlaubt und die zurückgegebene Instanz 
+hat den Typ Object.
