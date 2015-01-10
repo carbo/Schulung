@@ -1,0 +1,2 @@
+Schreibe ein Programm, welches ein java.util.HashMap-Objekt serialisiert. 
+Anschließend schreibe ein Programm, welches die java.util.HashMap wieder ausliest.
