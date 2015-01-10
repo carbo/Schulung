@@ -35,18 +35,32 @@ Im Wald jedoch begegnete es einem Wolf, und damit beginnt unsere schaurige Gesch
 
 Bis dahin ist noch einiges zu tun.
 
-a) Unser Programm repräsentiert sprachliche Konstruktedurch Aufzählungstypen.
+a) Unser Programm repräsentiert sprachliche Konstrukte durch Aufzählungstypen.
 Schreiben Sie einen Aufzählungstyp Geschlecht, der die Konstanten MAENNLICH, WEIBLICH
 und SAECHLICH enthält, und einen Aufzählungstyp Fall mit den Werten NOMINATIV, GENITIV, DATIV,
 und Akkusativ.
 
 b) Erweitern Sie den Aufzählungstyp Fall um eine Methode
 	public String getBestimmterArtikel(Geschlecht geschlecht)
-die den bestimmetn Artikel für einen bestimmten Fall und ein gegebenes Geschlecht ausgibt.
+die den bestimmten Artikel für einen bestimmten Fall und ein gegebenes Geschlecht ausgibt.
 So hat also beispielsweise 
-	Fall.GENITIV.getBestimmetrArtikel(Fall.MAENNLICH) den Wert "des". 
+	Fall.GENITIV.getBestimmterArtikel(Fall.MAENNLICH) den Wert "des". 
 Verfassen Sie analog eine Methode
 	public String getUnbestimmterArtikel(Geschlecht geschlecht)
+
+Hinweis: Die Artikel könnten z.B. in einem eindimensionalen String array
+private final static String[] ARTIKEL = {
+    "der", "die", "das",
+    "des", "der", "des",
+    "dem", "der", "dem",
+    "den", "die", "das",
+    "ein", "eine", "ein",
+    "eines", "einer", "eines",
+    "einem", "einer", "einem",
+    "einen", "eine", "ein"
+  };
+ 
+hinterlegt sein.
 
 c) Schreiben Sie eine Klasse Nom, die ein Nom (z.B. Rotkaeppchen oder Wolf) repräsentiert.
 Statten Sie die Klasse mit 
