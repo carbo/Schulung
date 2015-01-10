@@ -1,0 +1,1 @@
+Lesen Sie mit Hilfe der nio packages das File Uebung3.in ein.

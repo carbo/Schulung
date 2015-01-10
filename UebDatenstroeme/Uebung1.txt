@@ -1,0 +1,33 @@
+1.)Schreiben Sie eine Methode listDir, die ein File Objekt übergeben bekommt und den Inhalt des angegebenen Verzeichnisses ausgibt.
+Ein Aufruf:	
+	listFiles(new File("/home/attendee/workspace/datenstroeme"));
+	
+	ergibt also folgendes:
+	/home/attendee/workspace/datenstroeme/Datei.txt (Datei)
+	/home/attendee/workspace/datenstroeme/Verzeichnis1 (Ordner)
+	/home/attendee/workspace/datenstroeme/Verzeichnis2 (Ordner)
+	
+2.)Erweitern Sie Ihr Programm, so dass auch Unterverzeichnisse angezeigt werden können.(Stichwort Rekursion)
+Die Ausgabe soll jetzt wie folgt sein:
+	
+/home/attendee/workspace/datenstroeme/Datei.txt (Datei)
+/home/attendee/workspace/datenstroeme/Verzeichnis1 (Ordner)
+  /home/attendee/workspace/datenstroeme/Verzeichnis1/Datei.txt (Datei)
+  /home/attendee/workspace/datenstroeme/Verzeichnis1/Verzeichnis1a (Ordner)
+    /home/attendee/workspace/datenstroeme/Verzeichnis1/Verzeichnis1a/Datei.txt (Datei)
+/home/attendee/workspace/datenstroeme/Verzeichnis2 (Ordner)
+
+3.)Durchsuchen Sie ihr Hauptverzeichnis /home/attendee/workspace/datenstroeme nach dem Vorkommen
+einer Datei und Speichern Sie Ihre Ergebnisse in einer ArrayList:
+Ein Aufruf:
+	List<File> file = f.searchFile(new File("/Users/schulung/workspace/datenstroeme"), "Datei.txt");
+	for(File file : l) {
+			System.out.println(file);
+	}
+würde also folgenden Output erzeugen:
+	/Users/schulung/workspace/datenstroeme/Datei.txt
+	/Users/schulung/workspace/datenstroeme/Verzeichnis1/Datei.txt
+	/Users/schulung/workspace/datenstroeme/Verzeichnis1/Verzeichnis1a/Datei.txt
+	
+	
+	

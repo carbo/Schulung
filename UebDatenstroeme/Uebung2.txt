@@ -1,0 +1,14 @@
+Schreiben Sie ein kleines Javaprogramm, welches über ein RandomAccessFile die ersten
+5 Zeichen über readByte einliest.
+Der weitere Inhalt der Zeile soll mit Hilfe der Methode readLine erschlossen werden.
+Daraufhin schreiben Sie am Ende des Files die Zeile "RandomAccessFile Uebung finished"
+Der Output des Programms lautet wie folgt:
+Hallo
+Read rest of line: . Dies ist ein RandomAccessFile!
+
+und die Datei sieht nach Lauf des Programms wie folgt aus:
+
+Hallo. Dies ist ein RandomAccessFile!
+eine weitere ungelesene Zeile.
+
+RandomAccessFile Uebung finished

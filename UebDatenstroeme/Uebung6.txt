@@ -1,0 +1,15 @@
+Schreiben Sie ein Java Programm , das mit Hilfe der String-Methoden einen in einer Datei 
+vorgegebenen Text zeilenweise einliest, die auftretenden Vokale durch einen anderen angegebenen
+ersetzt.
+Der modifizierte Text soll auf Bildschirm und in einer Datei ausgegeben werden.
+Verwenden Sie den um ".ausgabe" verlängerten Namen der Eingabedatei. als Name für die Ausgabedatei.
+Der Name der der Eingabedatei und der Vokal, in den sämtliche auftretenden
+Vokale zu wandeln sind, sollen dem Programm als Komandozeilenparameter übergeben werden.
+
+Sie können bzw. müssen bei der Programmentwicklung davon ausgehen, dass die Vokale a,e, i, o und u
+in Groß- und Kleinschreibung vorkommen, während Umlaute nur als Doppelvokale ae, oe, und ue
+auftreten.
+Steht zum Beispiel in der Datei VokalWandel
+Fischer Fritze fischt frische Fische!
+ist die Ausgabe beispielsweise:
+Fuschur Frutzu fuscht fruschu Fuschu!

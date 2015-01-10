@@ -1,0 +1,2 @@
+Kopieren Sie das File FileToCopy.txt nach FileCopied.txt mit Hilfe der Klassen FileReader
+unf FileWriter.
