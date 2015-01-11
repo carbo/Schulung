@@ -1,6 +1,6 @@
 Obere Schranke ("upper bound wildcard") für Wildcardtypen
 
-Definieren Sie analog zur Klasse GenericTypmitWildcard aus der Aufgabe 8.4 
+Definieren Sie analog zur Klasse GenericTypmitWildcard aus der Uebung5 
 eine neue Klasse GenericTypmitExtend<T extends Number>. 
 Dies soll in ihrer Methode anzeige () als Methoden- und Rückgabe-Parameter 
 eine Referenz vom Typ der eigenen Klasse zulassen, 
