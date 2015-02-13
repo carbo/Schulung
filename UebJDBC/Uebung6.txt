@@ -1,0 +1,3 @@
+e) Ändern Sie das Gehalt des Mitarbeiters Schulz auf 4500 unter Verwendung eines UPDATEStatements.
+Zur Überprüfung der korrekten Ausführung lassen Sie erneut alle Datensätze wie
+unter d) beschrieben ausgeben. 

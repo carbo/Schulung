@@ -1,0 +1,14 @@
+Schreiben Sie jeweils einen Producer und einen Consumer als Thread und versuchen Sie 
+mit Hilfe der statischen Methode yield folgende Ausgabe zu erzeugen, d.h. beide Threads
+werden abwechselnd bearbeitet. Die Zahlen dabei können einfache counter sein, die 
+beispielsweise durch eine for-Schleife erzeugt werden.
+I am Consumer : Consumed Item 0
+I am Producer : Produced Item 0
+I am Consumer : Consumed Item 1
+I am Producer : Produced Item 1
+I am Consumer : Consumed Item 2
+I am Producer : Produced Item 2
+I am Consumer : Consumed Item 3
+I am Producer : Produced Item 3
+I am Producer : Produced Item 4
+I am Consumer : Consumed Item 4

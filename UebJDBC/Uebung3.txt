@@ -1,0 +1,4 @@
+b) Befüllen Sie die Tabelle Mitarbeiter durch entsprechende INSERT-Anweisungen, so
+dass sie folgende Datensätze enthält.
+- (Schulz, 3000)
+- (Maier, 4000) 
