@@ -1,6 +1,7 @@
 package UebJDBC;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
@@ -16,6 +17,9 @@ public class Datenverbindung {
 	private static final String PASSWORD = "tiger";
 	public static void main(String[] args) {
 		Datenverbindung datenverbindung = new Datenverbindung();
+		if(datenverbindung.getDriverManagerConnection() != null) {
+			System.out.println("Auch über DriverManager geht es!!!");
+		}
 		if(datenverbindung.getConnection() != null) {
 			System.out.println("Successful connection");
 		}
@@ -48,6 +52,20 @@ public class Datenverbindung {
 		}
 
 		return dbConnection;
+	}
+	
+	public Connection getDriverManagerConnection()  {
+		try {
+			Class.forName(DRIVER);
+		} catch (ClassNotFoundException e) {
+			System.out.println("Hier ist was schief gelaufen:"+e.getMessage());
+		}
+		try {
+			return DriverManager.getConnection("jdbc:postgresql://"+HOST+":"+PORT+"/"+DB, USER, PASSWORD);
+		} catch (SQLException e) {
+			System.out.println("Hier ist was schief gelaufen:"+e.getMessage());
+		}
+		return null;
 	}
 
 }

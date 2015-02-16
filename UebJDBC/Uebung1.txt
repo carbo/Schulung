@@ -6,3 +6,5 @@ auf- und wieder abbaut. Benutzen Sie dazu folgende Verbindungsparameter:
 - Name der Datenbank: autovermietung
 - Username: scott
 -Password: tiger
+
+Wählen Sie einmal die Variante über Driver Manager und einmal die Variante über DataSource. 
