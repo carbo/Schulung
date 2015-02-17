@@ -1,4 +1,6 @@
-Schreiben Sie ein Java Programm , das mit Hilfe der String-Methoden einen in einer Datei 
+Legen Sie sich im Ordner UebDatenstroeme eine Datei an und schreiben in diese Datei:
+Fischers Fritze fischt frische Fische!
+Schreiben Sie ein Java Programm , das mit Hilfe der String-Methoden einen in dieser Datei 
 vorgegebenen Text zeilenweise einliest, die auftretenden Vokale durch einen anderen angegebenen
 ersetzt.
 Der modifizierte Text soll auf Bildschirm und in einer Datei ausgegeben werden.
@@ -13,3 +15,14 @@ Steht zum Beispiel in der Datei VokalWandel
 Fischer Fritze fischt frische Fische!
 ist die Ausgabe beispielsweise:
 Fuschur Frutzu fuscht fruschu Fuschu!
+
+Hinweise:
+Die Vokale koennten Sie beispielsweise so angeben.
+char[] aeiouK = {'a', 'e', 'i', 'o', 'u'};
+char[] aeiouG = {'A', 'E', 'I', 'O', 'U'};
+
+Den zu erstezenden Vokal:
+char vK = Character.toLowerCase(vokal); vokal über args eingelesen
+char vG = Character.toUpperCase(vokal);
+
+Und das Ersetzen koennte über die replace Methode von String erfolgen.
