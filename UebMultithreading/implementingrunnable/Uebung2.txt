@@ -1,0 +1,18 @@
+Schreiben Sie eine Klasse MyRunnableThread, die als Thread gestartet werden kann.
+In dieser Klasse existiert eine statische Variable myCount.
+Die Klasse soll sobald Sie vom Scheduler Laufzeit bekommt, 
+die Variable myCount hochzählen(aber nur solange myCount < 10 ist) 
+und dabei folgendes ausgeben:
+Neben-Thread: {{myCount}}
+Nach einer solchen Ausgabe soll der Thread für 100 Millisekunden schlafen.
+
+Schreiben Sie ebenso eine Klasse RunMythread, die in der main-Methode MyRunnableThread
+startet, aber ebenso die Variable myCount höherzählt, wenn myCount < 10 ist.
+Die Ausgabe von ihm lautet.
+Main Thread: {{myCount}}
+Auch dieser Thread soll 100 millis schlafen nach jeder Ausgabe.
+
+
+
+
+
