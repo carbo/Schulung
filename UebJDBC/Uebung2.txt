@@ -9,7 +9,7 @@ folgenden Spalten:
 Hinweise:
 - Erstellen Sie die Tabelle in Ihrem Schema, das den gleichen Namen wie Ihr Datenbank-Nutzername
 hat. Der Tabellenname ist dabei <Schema>.<Tabelle>, also
-z.B. db2ueb01.Mitarbeiter.
+z.B. schulung.Mitarbeiter.
 - Um eine wiederholte Ausführung Ihrer Programms zu gewährleisten, löschen Sie die
 Tabelle vor dem Anlegen mittels DROP TABLE <Schema>.<Tabelle>. Eine
 etwaige Fehlermeldung (falls die Tabelle nicht vorhanden sein sollte) können Sie
