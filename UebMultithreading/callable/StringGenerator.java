@@ -7,8 +7,8 @@ public class StringGenerator implements Callable<String> {
 
 	public String call() throws Exception {
 		String [] allStrings =
-                {"Apple", "Ball", "Cat", "Dog", "Elephant",
-                "Flower", "Grape", "Horse", "Ink","Joker"};
+                {"Apfel", "Ball", "Katze", "Hund", "Elefant",
+                "Blume", "Pfered", "Eice","Joker", "Auto"};
 		int index = (int)(random()*100)/10;
 
 		//Let's wait for sometime

@@ -51,7 +51,7 @@ public class StringGeneratorTest {
 
 		long end = System.currentTimeMillis();
 
-		System.out.println("Therned string is:\n"+resultStr);
-		System.out.println("Execution:"+(end - start));
+		System.out.println("Konkatenierter String:\n"+resultStr);
+		System.out.println("Dauer:"+(end - start));
 	}
 }

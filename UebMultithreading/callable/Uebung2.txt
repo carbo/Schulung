@@ -1,0 +1,10 @@
+Erzeugen Sie einen StringGenerator Thread, der einen random String aus einem String
+Array an den Caller zurückliefert.
+Erzeugen Sie zusätzlich einen StringGeneratorTest, der 10 StringGeneratoren Threads erzeugt
+und die concatentaion von allen Strings auf dem Bildschrim ausgibt.
+Messen Sie zudem die Zeit, die es benötigt, die Ergebnisse einzusammeln bzw. zu konkatenieren
+und geben Sie das Ergebnis aus.
+Die Ausgabe könnte so aussehen:
+Konkatenierter String:
+Joker Ball Auto Blume Auto Ball Elefant Ball Hund Hund 
+Dauer:1005
