@@ -1,0 +1,12 @@
+Schreiben Sie ein einfaches HTML File, welches folgendes ausgibt:
+Guten Tag
+Heute ist Montag der 03. März 2015.
+Sie haben soeben die ersten Schritte in der Web-Programmierung getan!
+Speichern Sie das File als index.html ab und machen es aufrufbar über:
+http://localhost:8080/uebungeins
+
+Wer nicht so fit ist in HTML kann sich behelfen unter:
+http://de.selfhtml.org/
+
+Es geht in dieser Übung aber weniger um dass Erlernen von html als vielmehr
+um die ersten Gehversuche im tomcat.
