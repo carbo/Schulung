@@ -10,11 +10,11 @@ public class Main {
   public static void main(String[] args) throws NoSuchMethodException, 
           IllegalAccessException, IllegalArgumentException,
           InvocationTargetException {
-    Rectangle rect = new Rectangle("football ground", 60, 100, Color.green);
-    System.out.println("Object before any changes:\n" + rect);
+    Rectangle rect = new Rectangle("Fußballfeld", 60, 100, Color.green);
+    System.out.println("Objekt vor den Änderungen:\n" + rect);
     Class rectangleClassObject = rect.getClass();
-    System.out.println("\nFinding all declared methods "
-                       +"and its return type and parameter types:");
+    System.out.println("\nAlle deklarierten Methoden "
+                       +"und Ihre return Typen und Parameter Typen:");
     Method[] methods = rectangleClassObject.getDeclaredMethods();
     for (Method method : methods) {
       Class retType = method.getReturnType();
@@ -29,8 +29,8 @@ public class Main {
       }
       System.out.println(")");
     }
-    System.out.println("\nFinding all public methods"+
-                       "and its return type and parameter types:");
+    System.out.println("\nAlle öffentlichen Methoden"+
+                       "und Ihre return Typen und Parameter Typen:");
     Method[] amethods = rectangleClassObject.getMethods();
     for (Method method : amethods) {
       Class retType = method.getReturnType();
@@ -46,13 +46,13 @@ public class Main {
       System.out.println(")");
     }
 
-    System.out.println("\nFinding a public method and invoke it:");
+    System.out.println("\nAufruf der öffentlichen Methoden:");
     Class [] params = {Color.class};
     Method method = rectangleClassObject.getMethod("setColor",params);
     Object [] values = {Color.blue};
     method.invoke(rect, values);
 
-    System.out.println("\nObject after any changes:\n" + rect);
+    System.out.println("\nObjekt nach den Änderungen:\n" + rect);
 
   }
 }
