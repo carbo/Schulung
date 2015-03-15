@@ -12,8 +12,8 @@ public class Rectangle   {
   }
   @Override
   public String toString() {
-    return " Name: " + name+", width: " +
-            width + ", length: " + length + ", color: " + color;
+    return " Name: " + name+", Breite: " +
+            width + ", Länge: " + length + ", Farbe: " + color;
   }
   public Rectangle(String name, int width, int length, Color color) {
     this.name=name;

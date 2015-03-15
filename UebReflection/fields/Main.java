@@ -8,21 +8,21 @@ public class Main {
 
   public static void main(String[] args) throws IllegalArgumentException,
           IllegalAccessException, NoSuchFieldException {
-    Rectangle rect = new Rectangle("football ground", 60, 100, Color.green);
-    System.out.println("Object before any changes:\n" + rect);
+    Rectangle rect = new Rectangle("Fußballfeld:", 60, 100, Color.green);
+    System.out.println("Objekt vor den Änderungen:\n" + rect);
     Class rectangleClassObject = rect.getClass();
 
-    System.out.println("\nFinding all declared fields and its type:");
+    System.out.println("\nAlle Felder und deren Typ:");
     Field[] fields = rectangleClassObject.getDeclaredFields();
     for (Field field : fields) {
       int mod = field.getModifiers();  // get modifiers
-      System.out.print("Field: " + Modifier.toString(mod) + " "
+      System.out.print("Feld: " + Modifier.toString(mod) + " "
               + field.getType() + " " + field.getName());
       if (Modifier.isPrivate(mod)) {
         // Cannot access private members, only public and protected
         System.out.println();
       } else {
-        System.out.println(" - with value:" + field.get(rect));
+        System.out.println(" - mit Wert:" + field.get(rect));
       }
       // the int.class returns a Class object
       // this is possible for all primitives
@@ -37,31 +37,19 @@ public class Main {
       }
     }
 
-    System.out.println("\nFinding all public fields and its type:");
+    System.out.println("\nAlle public Felder und dessen Typ:");
     Field[] pfields = rectangleClassObject.getFields();
     for (Field field : pfields) {
       int mod = field.getModifiers();
-      System.out.println("Field: " + Modifier.toString(mod) + " "
+      System.out.println("Feld: " + Modifier.toString(mod) + " "
               + field.getType() + " " + field.getName());
       if (field.getName().equals("name")) {
        // As the field, name, is public we do not get any IllegalAccessException
-       field.set(rect, "Handball court");
+       field.set(rect, "Handballfeld");
       }
     }
 
-    System.out.println("\nFinding a specific public field and its type:");
-    // The next statement will throws a NoSuchFieldException
-    // if the field, name, was NOT public
-    Field field = rectangleClassObject.getField("name");
-    int mod = field.getModifiers();
-    System.out.println("Field: " + Modifier.toString(mod) + " "
-            + field.getType() + " " + field.getName());
-    if (field.getName().equals("name")) {
-      field.set(rect, "Handball court");
-    }
-
-
-    System.out.println("\nObject after any changes:\n"
+    System.out.println("\nObjekt nach den Änderungen:\n"
             + rect);
   }
 }

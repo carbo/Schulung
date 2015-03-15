@@ -1,0 +1,30 @@
+Wiederum sei die Klasse Rectangle gegeben.
+Instanzieren Sie die Klasse ohne Reflection, so dass Ihre toString Methode
+folgendes ausgibt:
+Name: Fußballfeld:, Breite: 60, Länge: 100, Farbe: java.awt.Color[r=0,g=255,b=0]
+
+Daraufhin analysieren Sie mit Hilfe von Reflection alle Felder, deren Typ und den Wert.
+
+Geben Sie auch extra die public Felder aus:
+
+Ändern Sie die Felder des Objektes soweit das möglich ist, so dass die
+Ausgabe der toString-Methode am Ende folgendes ausgibt.
+
+Handballfeld, Breite: 20, Länge: 40, Farbe: java.awt.Color[r=0,g=255,b=0]
+
+Insgesamt soll die Ausgabe also wie folgt aussehen:
+
+Objekt vor den Änderungen:
+ Name: Fußballfeld:, Breite: 60, Länge: 100, Farbe: java.awt.Color[r=0,g=255,b=0]
+
+Alle Felder und deren Typ:
+Feld: public class java.lang.String name - mit Wert:Fußballfeld:
+Feld: protected int length - mit Wert:100
+Feld: protected int width - mit Wert:60
+Feld: private class java.awt.Color color
+
+Alle public Felder und dessen Typ:
+Feld: public class java.lang.String name
+
+Objekt nach den Änderungen:
+ Name: Handballfeld, Breite: 20, Länge: 40, Farbe: java.awt.Color[r=0,g=255,b=0]
