@@ -5,7 +5,7 @@ import java.lang.reflect.Constructor;
 public class Main {
 
   public static void main(String[] args) {
-    System.out.println("\nFind declared constructors and its parameter types:");
+    System.out.println("\nGefundene deklarierte Konstruktoren und die Parameter Typen:");
     Class rectangleClassObject = Rectangle.class;
     Constructor[] constructors = rectangleClassObject.getDeclaredConstructors();
     for (Constructor constructor : constructors) {
