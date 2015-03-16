@@ -1,0 +1,6 @@
+1.)Erstellen Sie ein Servlet welches zwei Parameter von der URL ausliest und diese in folgender Weise ausgibt. Sie haben versucht sich einzuloggen mit name = {Name} und Passwort = {Passwort}. Dies ist Ihnen geglückt. Herzlich willkommen!
+2.)Übersetzen Sie das Servlet mit eclipse
+3.)Erstellen Sie ein web.xml file, welches das Servlet definiert und ihm einen Pfad zuweist.
+Das Servlet soll unter /login/LoginServlet erreichbar sein.
+4.)Packen Sie das Compilat und die web.xml an die richtige Stelle in Ihrem tomcat server und starten/restarten den Server und rufen folgende URL auf:
+http://localhost:8080/login/LoginServlet. Oben erwähnter Output sollte generiert sein.

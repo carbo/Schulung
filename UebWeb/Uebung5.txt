@@ -1,0 +1,14 @@
+Wir beginnen jetzt mit der Entwicklung unserer Autovermeitung für das Web.
+Dazu existiert ein java-Projekt mit Namen autovermietung.
+1.) Im web-Verzeichnis Ihres Projektes liegt ein index.html, welches einen Login darstellt.
+Schreiben Sie ein Servlet im Package login, welches die Eingaben des Users von diesem html entgegennimmt und überprüft, ob der Login korrekt ist. 
+Im ersten Schritt reicht eine hartcodierte Prüfung ala user.equals("attendee") && password.equals("eclipse"). 
+Ein erfolgreicher Login führt den User auf eine Seite mit dem Text Herzlichen Willkommen. 
+Ein unerfolgreicher Login führt zurück auf die Login-Seite und schreibt "Das hat leider nicht geklappt".
+Wer mag und Zeit hat, kann die Authentifizierung auch gerne gegen die DB machen. Unter 
+{link zur Datenbank} existiert eine Tabelle Benutzer mit den Spalten "User" und "Passwort". In dieser Tabelle ist ein Nutzer eingetragen(attendee, eclipse).
+2.)Übersetzen Sie das Servlet mit eclipse
+3.)Erstellen Sie ein web.xml file, welches das Servlet definiert und ihm einen Pfad zuweist.
+Das Servlet soll unter /autovermietung/OnLoginServlet erreichbar sein.
+4.)Packen Sie das war-Archiv mit dem Ihnen zur Verfügung gestelletn ant-Skript und deployen Sie Ihre Applikation ebenfalls über ant.
+Öffnen Sie die Applikation http://localhost:8080/autovermietung
