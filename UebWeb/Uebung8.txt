@@ -1,5 +1,0 @@
-Implementieren Sie auch eine Seite mit der Liste 
-aller PKW und seitlich zu jedem Button existiert ein Löschen Button, 
-so dass PKWs gelöscht werden können.
-Wahlweise können Sie das html auch abändern, so dass eine Checkbox seitlich
-der Liste besteht und mehrere Autos gelöscht werden können.

@@ -1,3 +1,0 @@
-1.) Erstellen Sie eine weitere jsp, die einen neuen PKW aufnehmen kann und diesen über ein Servlet in der Datenbank persistiert.
-2.)Bauen und Deployen Sie Ihre Applikation
-3.)Testen Sie Ihre Applikation über http://localhost:8080/autovermietung
