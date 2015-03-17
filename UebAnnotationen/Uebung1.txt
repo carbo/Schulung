@@ -1,0 +1,41 @@
+Erstellen Sie einen neuen Annotationstyp Test mit dem Attribut expected.
+Annotieren Sie damit anschließend einige Methoden Ihrer zu schreibenden Klasse TestUsage.
+
+Schreiben Sie dann einen TestRunner, der per Refelection für jede Methode der Klasse TestUsage prüft, ob Sie mit 
+@Test annotiert ist. Wenn Sie annotiert ist, wird Sie ausgeführt, wenn nicht, wird Sie nicht ausgeführt.
+Wenn die Methode zusätzlich ein expected Attribut gesetzt hat, soll geprüft werden,
+ob die Typen übereinstimmen und nur dann darf der Test erfolgreich durchlaufen.
+
+Zur Veranschaulichung ein Beispiel:
+Die Klasse TestRunner sihet wie folgt aus:
+public class TestUsage {
+	@Test(expected=MyException.class)
+	public void testeIrgendwas() {
+		System.out.println("testeIrgendwas");
+		throw new MyException();
+	}
+	
+	@Test
+	public void testeIrgendwas2() {
+		System.out.println("testeIrgendwas2");
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testeIrgendwas3() {
+		System.out.println("testeIrgendwas3");
+		throw new IllegalArgumentException();
+	}
+	
+	public void testIrgendwas4() {
+		System.out.println("testIrgendwas4");
+	}
+
+}
+
+Und der Lauf des TestRunners ergibt:
+testeIrgendwas
+passed
+testeIrgendwas2
+passed
+testeIrgendwas3
+failed
