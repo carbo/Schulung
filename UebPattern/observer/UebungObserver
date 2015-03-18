@@ -1,0 +1,19 @@
+Implementieren Sie mit Hilfe des Observer Patterns folgendes.
+Bei einem NewsCollector können sich mehrere Abonennten(eigene Klasse mit Attribut name) als Interessenten für neue News
+anmelden. Sobald der NewsCollector neue News erh�lt, werden diejenigen Abonnenten benachrichtigt, die beim NewsCollector als zu informierende Abonennten angemeldet sind.
+Der NewsCollector macht die Verwaltung der Abonennten und die Verwaltung der Nes über zwei separate Listen, wobei die News zur Vereinfachung als
+String dargestellt werden darf.
+Die Ausgabe des Programms könnte wie folgt lauten:
+
+Uwe ist informiert worden.
+[Pilotentsreik]
+Dirk ist informiert worden.
+[Pilotentsreik]
+Pter ist informiert worden.
+[Pilotentsreik]
+Uwe ist informiert worden.
+[Pilotentsreik, Schalke verliert 5:0]
+Dirk ist informiert worden.
+[Pilotentsreik, Schalke verliert 5:0]
+Pter ist informiert worden.
+[Pilotentsreik, Schalke verliert 5:0]
