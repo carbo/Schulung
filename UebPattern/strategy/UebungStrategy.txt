@@ -1,0 +1,24 @@
+Schreiben Sie eine Kontextklasse, die eine Methode sortDouble besitzt. Diese Methode soll je nach eingesetellter Sortiermethode die 
+Sortierung eines double-Arrays vornehmen. Mögliche Sortierweisen sind der QuickSort oder der BubbleSort.
+Lösen Sie diese Problematik mit Hilfe des Strategy Patterns. 
+Wahlweise können Sie gerne ein dritte Sortiermethodik hinzufügen.
+
+Zur Wiederholung:
+Um eine Liste mit Quicksort zu sortieren wird ein Pivotelement p
+ausgewählt und die Elemente der Liste in zwei neue Listen gespeichert, 
+mit der Eigenschaft, dass in der ersten Liste die Elemente kleiner oder gleich p 
+und in der zweiten Liste die Elemente größer p liegen. 
+Mit den beiden Listen wird wieder genauso verfahren.
+
+Bubblesort:
+Der BubbleSort-Algorithmus vergleicht der Reihe nach zwei benachbarte Elemente 
+einer n-elementigen Liste x und vertauscht sie, 
+falls sie nicht in der richtigen Reihenfolge vorliegen. 
+Ist er am Ende der Liste angekommen wird der Vorgang wiederholt.
+Der Algorithmus endet, wenn alle Elemente in der richtigen Reihenfolge vorliegen,
+ im letzten Durchgang also keine Vertauschoperationen mehr stattgefunden haben.
+ 
+ for (i=1 to n-1)
+	for (j=0 to n-i-1)
+		if (x[j] > x[j+1])
+   			vertausche x[j] und x[j+1]
