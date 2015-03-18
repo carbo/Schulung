@@ -1,0 +1,12 @@
+Schreiben Sie eine abstrakte Superklasse Room mit der Methode showRoom und dem Rückgabetyp String.
+Daraufhin erstellen Sie eine konkrete Komponente davon mit dem Namen SimpleRoom. Die Implementierung soll dafür sorgen, dass „Normaler Raum“ zurückgegeben wird.
+Daraufhin erstellen Sie eine abstrakte Klasse RoomDecorator, die ebenfalls Room erweitert und zusätzlich einen Member vom Typ Room halten kann. Die Implementierung von showRoom soll showRoom von dem Member aufrufen.
+Einwerfen Sie zwei weitere konkrete Dekoratoren, die den Raum weiter ausschmücken.
+ColorDecorator würde den Raum um eine Farbe erweitern. Ein CurtainDecorator um Gardinen.
+
+Ein Aufruf von 
+Room room = new CurtainDecorator(new ColorDecorator(newSimmpleRoom()));
+System.out.println(room.showRoom()); 
+soll zu folgendem Ergebnis führen:
+
+Normaler Raum + Blauer Farbe + Roten Gardinen
