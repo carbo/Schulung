@@ -14,11 +14,11 @@ public class QuickSort implements SortInterface {
 		if (low >= high)
 			return;
  
-		//pick the pivot
+		//nimm das pivot element
 		int middle = low + (high - low) / 2;
 		int pivot = arr[middle];
  
-		//make left < pivot and right > pivot
+		//links < pivot rechts > pivot
 		int i = low, j = high;
 		while (i <= j) {
 			while (arr[i] < pivot) {
@@ -38,7 +38,7 @@ public class QuickSort implements SortInterface {
 			}
 		}
  
-		//recursively sort two sub parts
+		//rekursiv sortieren von zwei Teillisten
 		if (low < j)
 			quicksort(arr, low, j);
  
