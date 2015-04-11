@@ -10,6 +10,7 @@ public class PKW extends KFZ {
 		verfuegbar = verfuegbar + 1; // Teil b)
 	}
 
+	@Override
 	void zurueckgeben(int tage, int gefKM) {
 		super.zurueckgeben(tage, gefKM);
 		waschen();
@@ -22,6 +23,7 @@ public class PKW extends KFZ {
 	}
 
 	// fuer Teil b)
+	@Override
 	void vermieten() {
 		if (frei)
 			verfuegbar = verfuegbar - 1;

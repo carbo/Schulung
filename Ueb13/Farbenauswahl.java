@@ -6,9 +6,9 @@ public class Farbenauswahl implements Farben {
 	static {
 		farbe[Farben.BLAU] = "blau";
 		farbe[ROT] = "rot";
-		farbe[Farben.WEISS] = "weiss";
-		farbe[Farben.ROSA] = "rosa";
-		farbe[Farben.SCHWARZ] = "schwarz";
+		farbe[FarbenHell.WEISS] = "weiss";
+		farbe[FarbenHell.ROSA] = "rosa";
+		farbe[FarbenDunkel.SCHWARZ] = "schwarz";
 		farbe[BRAUN] = "braun";
 		
 	}

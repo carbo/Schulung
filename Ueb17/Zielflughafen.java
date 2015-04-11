@@ -27,7 +27,8 @@ public enum Zielflughafen {
 	
 	static class MyFlughafenComparator implements Comparator<Zielflughafen>
 	{
-	    public int compare(Zielflughafen o1, Zielflughafen o2)
+	    @Override
+		public int compare(Zielflughafen o1, Zielflughafen o2)
 	    {
 	    	return (int)(o2.dauer - o1.dauer); // this compares length
 	    }

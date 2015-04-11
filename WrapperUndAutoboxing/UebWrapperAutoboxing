@@ -1,0 +1,7 @@
+Schreiben Sie ein Programm, das den größten gemeinsamen Teiler (ggT) 
+von zwei positiven ganzen Zahlen berechnet. 
+Die beiden Zahlen sollen als Kommandozeilenargumente übergeben werden. 
+Zur Berechnung des gut können Sie in einer Schleife jeweils 
+die kleinere Zahl von der größeren abziehen, 
+bis beide Zahlen gleich sind. 
+Diese Zahl entspricht dann dem ggT.

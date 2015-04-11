@@ -1,4 +1,4 @@
-:qpackage Ueb15;
+package Ueb15;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,7 +28,8 @@ private JButton button;
 }
 
 class ButtonLauscher implements ActionListener {
-    public void actionPerformed(ActionEvent e) {
+    @Override
+	public void actionPerformed(ActionEvent e) {
             System.out.println("Button '" + ((JButton)e.getSource()).getText() + "' geklickt.");
     }
 

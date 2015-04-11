@@ -16,12 +16,14 @@ public class LKW extends KFZ {
 	}
 
 	// fuer Teil b)
+	@Override
 	void vermieten() {
 		if (frei)
 			verfuegbar = verfuegbar - 1;
 		super.vermieten();
 	}
 
+	@Override
 	void zurueckgeben(int tage, int gefKM) {
 		super.zurueckgeben(tage, gefKM);
 		verfuegbar = verfuegbar + 1;

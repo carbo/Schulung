@@ -1,3 +1,4 @@
+package zUeb10;
 public class Radio {
 
   int lautstaerke;

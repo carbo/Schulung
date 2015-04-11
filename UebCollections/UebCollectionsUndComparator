@@ -1,0 +1,11 @@
+Schreiben Sie eine Klasse Employee mit den Attributen name(String), vorname(String) und gehalt(int).
+Implementieren Sie die jeweiligen getter und setter für die Attribute.
+Erzeugen Sie einen Konstruktor, der die o.g. Attribute mit Inhalt füllt.
+Spendieren Sie der Klasse ebenfalls eine geeignete toString-metshode.
+Daraufhin schreiben Sie eine Implementierung des Interface java.util.Comparator mit dem Namen Gehaltscomparator. 
+Es ist ausreichend die Methode 
+public int compare(Object o1, Object o2) 
+zu implementieren. Erzeugen Sie eine weitere Klasse, die diverse Employee Objekte initialisiert, sie in eine ArrayList packt, 
+um Sie daraufhin zu sortieren mit der statischen sort Methode aus der Collections-Klasse.
+Geben Sie die sortierte Liste auf der Konsole aus.
+Wahlweise implementieren Sie einen weiteren Comparator, der Employees nach dem Nachnamen sortiert.

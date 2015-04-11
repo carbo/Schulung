@@ -1,3 +1,4 @@
+package zUeb6;
 import Prog1Tools.IOTools;
 public class Anagram {
   

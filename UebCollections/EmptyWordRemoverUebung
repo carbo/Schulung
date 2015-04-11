@@ -1,0 +1,17 @@
+Gegeben ist ein String mit einem Satz
+
+String s = "Wald ist überflüssig. Auf anderen Planeten gibt es auch keine Bäume.";
+Laufe über den String und geben alle Wörter aus. (Dass diese die Satzzeichen enthalten, kann im ersten Schritt ignoriert werden.)
+
+String tokens = s.split( " " );
+for ( int i = 0; i < tokens.length; i++ ) {
+  String token = tokens[ i ];
+  // ...
+}
+Aus einem Satz sollen alle "leeren Worte", das sind Artikel, Präpositionen -- also Wörter wie "der", "das", "er", "sie", "ein", "eine", "keine", "auf" -- gelöscht werden. 
+Die Groß-Kleinschreibung soll keine Rolle spielen.
+
+public static Collection<String> removeEmptyWords( String s ) {
+  // ...
+}
+Das Ergebnis soll ein Collection mit kleingeschriebenen nicht-leeren Wörtern sein, also etwa {"wald", "überflüssig", "anderen", "planeten", "gibt", "keine", "bäume" }.

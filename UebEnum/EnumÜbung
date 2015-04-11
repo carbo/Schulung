@@ -1,0 +1,68 @@
+Sie sollen einen grammatikalisch korrekten "Geschichtenerzähler" bauen. Das folgende 
+Programm erzählt eine (leicht gekürzte) Fassung von Rotkäpchen und dem bösen Wolf:
+
+public class EsWarEinmal {
+  public static void absatz(Object... elemente) {
+    for(Object element : elemente)
+      System.out.print(String.valueOf(element));
+    System.out.println();
+  }
+  public static void main(String... args) {
+    Nom rotkaeppchen = 
+      new Nom(Geschlecht.SAECHLICH,"Rotkaeppchen");
+    Nom wolf =
+      new Nom(Geschlecht.MAENNLICH,"Wolf");
+    Nom oma =
+      new Nom(Geschlecht.WEIBLICH,"Grossmutter");
+    absatz(
+        "Es war einmal ",
+        rotkaeppchen.mitArtikel(Fall.NOMINATIV,false),
+        ", das wollte einen Ausflug zu ",
+        oma.mitArtikel(Fall.DATIV,true),
+        " machen.");
+    absatz(
+        "Im Wald jedoch begegnete es ",
+        wolf.mitArtikel(Fall.DATIV,false),
+        ", und damit beginnt unsere schaurige Geschichte...");
+  }
+} 
+
+Wenn das Programm einmal lauffähig ist, gibt es den folgenden
+Text auf dem Bildschirm aus:
+
+Es war einmal ein Rotkaeppchen, das wollte einen Ausflug zu der Grossmutter machen.
+Im Wald jedoch begegnete es einem Wolf, und damit beginnt unsere schaurige Geschichte...
+
+Bis dahin ist noch einiges zu tun.
+
+a) Unser Programm repräsentiert sprachliche Konstruktedurch Aufzählungstypen.
+Schreiben Sie einen Aufzählungstyp Geschlecht, der die Konstanten MAENNLICH, WEIBLICH
+und SAECHLICH enthält, und einen Aufzählungstyp Fall mit den Werten NOMINATIV, GENITIV, DATIV,
+und Akkusativ.
+
+b) Erweitern Sie den Aufzählungstyp Fall um eine Methode
+	public String getBestimmterArtikel(Geschlecht geschlecht)
+die den bestimmetn Artikel für einen bestimmten Fall und ein gegebenes Geschlecht ausgibt.
+So hat also beispielsweise 
+	Fall.GENITIV.getBestimmetrArtikel(Fall.MAENNLICH) den Wert "des". 
+Verfassen Sie analog eine Methode
+	public String getUnbestimmterArtikel(Geschlecht geschlecht)
+
+c) Schreiben Sie eine Klasse Nom, die ein Nom (z.B. Rotkaeppchen oder Wolf) repräsentiert.
+Statten Sie die Klasse mit 
+	- einem Konstruktor der Form
+		public Nom(Geschlecht geschlecht, String name)
+	- und einer Methode 
+		public String mit Artikel(Fall fall, boolean bestimmt)
+	die als Ergebnis den Namen mit dem entsprechenden bestimmten oder
+	unbestimmten Artikel liefert, 
+aus. Die Anweisungen
+	Nom n = new Nom(Geschlecht.SAECHLICH,"Rotkaeppchen");
+	String s = n.mitArtikel(Fall.Nominativ, false);
+liefern also den String "ein Rotkaeppchen".
+
+d) Uebersetzen Sie alle, und starten Sie die main-Methode der Klasse EsWarEinmal. 
+
+
+ 
+
