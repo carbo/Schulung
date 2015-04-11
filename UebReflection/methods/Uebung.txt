@@ -1,0 +1,44 @@
+Wieder sei die Klasse Rectangle gegeben und eine Instanz die folgendes ausgibt:
+Name: Fußballfeld, Breite: 60, Länge: 100, Farbe: java.awt.Color[r=0,g=255,b=0]
+Diesmal sollen die Werte des Objektes über den Methoden-Aufruf geändert werden
+(per reflection natürlich).
+
+Der Output des Programmes könnte wie folgt aussehen:
+
+Objekt vor den Änderungen:
+ Name: Fußballfeld, Breite: 60, Länge: 100, Farbe: java.awt.Color[r=0,g=255,b=0]
+
+Alle deklarierten Methoden und Ihre return Typen und Parameter Typen:
+public java.lang.String toString()
+public int getLength()
+public java.lang.String getName()
+public void setName(java.lang.String)
+public void setLength(int)
+public java.awt.Color getColor()
+public void setWidth(int)
+public int getWidth()
+public void setColor(java.awt.Color)
+
+Alle öffentlichen Methodenund Ihre return Typen und Parameter Typen:
+public java.lang.String toString()
+public int getLength()
+public java.lang.String getName()
+public void setName(java.lang.String)
+public void setLength(int)
+public java.awt.Color getColor()
+public void setWidth(int)
+public int getWidth()
+public void setColor(java.awt.Color)
+public final void wait(long,int)
+public final native void wait(long)
+public final void wait()
+public boolean equals(java.lang.Object)
+public native int hashCode()
+public final native java.lang.Class getClass()
+public final native void notify()
+public final native void notifyAll()
+
+Aufruf der öffentlichen Methoden:
+
+Objekt nach den Änderungen:
+ Name: Fußballfeld, Breite: 60, Länge: 100, Farbe: java.awt.Color[r=0,g=0,b=255]

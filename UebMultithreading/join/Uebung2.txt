@@ -1,0 +1,30 @@
+Ziel der Aufgabe ist es drei Threads zu programmieren die auf das Beenden des anderen Warten und dann eine Zeit schlafen:
+
+Sie drucken jeden neuen Zustand auf der Konsole aus
+Als erstes nach ihrem Start warten sie bis ein anderer Thread auf den sie zeigen sich beendet hat. Zeigen sie auf keinen anderen Thread so gehen sie sofort über zum nächstens Schritt.
+Die Threads schlafen für eine vorgegebene Zeit in ms
+Die Threads beenden sich
+
+JoinAndSleep.png
+
+Die geforderte Aufgabe soll in einer Klasse implementiert werden
+
+Erweitern Sie die Klasse JoinAndSleep aus der Klasse Thread
+Attribute: Die Klasse hat ein Ganzzahlattribut sleep zur Verwaltung der Schlafzeit
+Die Klasse hat ein Ganzzahlattribut sleep zur Verwaltung der Schlafzeit
+Die Klasse hat eine Referenz auf ein Objekt der Klasse JoinAndSleep
+Konstruktor
+Der Konstruktor der Klasse erlaubt es die Schlafzeit zu übergeben und eine Referenz auf einen anderen Thread
+run() Methode: Diese Methode implementiert die oben genannte Semantik zum Warten und Schlafen
+Falls ein Thread gegeben ist soll auf sein Ende gewartet werden
+Anschliesend soll eine bestimmte Zeit geschlafen werden
+Fügen Sie zwischen allen Schritten Konsolenausgaben ein um den Fortschritt zu kontrollieren. Geben Sie hier immer auch den aktuellen Thread aus!
+main() Methode
+Erzeuge Thread 3: Er soll auf keinen Thread warten und dann 4000ms schlafen
+Erzeuge Thread 2: Er soll auf Thread 3 warten und dann 3000ms schlafen
+Erzeuge Thread 1: Er soll auf Thread 2 warten und dann 2000ms schlafen
+Starten Sie Thread 1
+Starten Sie Thread 2
+Starten Sie Thread 3
+
+JoinAndSleepVererbung.png

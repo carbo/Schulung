@@ -1,0 +1,16 @@
+In dieser Aufgabe erweitern Sie Ihr Programm aus Uebung 1 um typische Funktionen einer
+datenbankgestützten Anwendung (Anlegen und Löschen einer Tabelle sowie Einspielen von Datensätzen). Verändern Sie Ihr Programm derart, dass sämtliche
+nachfolgend aufgeführten Aktionen automatisch durch Ihr Programm ausführt werden. Es soll
+keinerlei Benutzerinteraktion geben.
+a) Erstellen Sie unter Verwendung von CREATE TABLE eine Tabelle Mitarbeiter mit
+folgenden Spalten:
+- Name mit Typ VARCHAR(50) als Primärschlüssel
+- Gehalt mit Typ INT, das nicht NULL sein darf
+Hinweise:
+- Erstellen Sie die Tabelle in Ihrem Schema, das den gleichen Namen wie Ihr Datenbank-Nutzername
+hat. Der Tabellenname ist dabei <Schema>.<Tabelle>, also
+z.B. schulung.Mitarbeiter.
+- Um eine wiederholte Ausführung Ihrer Programms zu gewährleisten, löschen Sie die
+Tabelle vor dem Anlegen mittels DROP TABLE <Schema>.<Tabelle>. Eine
+etwaige Fehlermeldung (falls die Tabelle nicht vorhanden sein sollte) können Sie
+durch einen try-catch-Anweisung in Java abfangen (SQLException) und ignorieren.

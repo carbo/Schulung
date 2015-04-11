@@ -1,0 +1,114 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.0
+-- Dumped by pg_dump version 9.4.0
+-- Started on 2015-03-01 09:12:04 CET
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 7 (class 2615 OID 16499)
+-- Name: scott; Type: SCHEMA; Schema: -; Owner: -
+--
+
+CREATE SCHEMA scott;
+
+
+SET search_path = scott, pg_catalog;
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 178 (class 1259 OID 24659)
+-- Name: benutzer; Type: TABLE; Schema: scott; Owner: -
+--
+
+CREATE TABLE benutzer (
+    name character(30),
+    password character(30)
+);
+
+
+--
+-- TOC entry 177 (class 1259 OID 16505)
+-- Name: lkw; Type: TABLE; Schema: scott; Owner: -
+--
+
+CREATE TABLE lkw (
+    kennzeichen character varying(10) NOT NULL,
+    kilometer integer NOT NULL,
+    last integer NOT NULL
+);
+
+
+--
+-- TOC entry 176 (class 1259 OID 16500)
+-- Name: pkw; Type: TABLE; Schema: scott; Owner: -
+--
+
+CREATE TABLE pkw (
+    kennzeichen character varying(10) NOT NULL,
+    preis integer NOT NULL,
+    frei boolean
+);
+
+
+--
+-- TOC entry 2281 (class 0 OID 24659)
+-- Dependencies: 178
+-- Data for Name: benutzer; Type: TABLE DATA; Schema: scott; Owner: -
+--
+
+INSERT INTO benutzer (name, password) VALUES ('attendee                      ', 'foundation                    ');
+
+
+--
+-- TOC entry 2280 (class 0 OID 16505)
+-- Dependencies: 177
+-- Data for Name: lkw; Type: TABLE DATA; Schema: scott; Owner: -
+--
+
+INSERT INTO lkw (kennzeichen, kilometer, last) VALUES ('L-LKW-1', 19000, 1500);
+
+
+--
+-- TOC entry 2279 (class 0 OID 16500)
+-- Dependencies: 176
+-- Data for Name: pkw; Type: TABLE DATA; Schema: scott; Owner: -
+--
+
+INSERT INTO pkw (kennzeichen, preis, frei) VALUES ('F-BH-678', 55000, true);
+INSERT INTO pkw (kennzeichen, preis, frei) VALUES ('Bn-Gu-999', 60000, true);
+
+
+--
+-- TOC entry 2169 (class 2606 OID 16509)
+-- Name: lkw_pkey; Type: CONSTRAINT; Schema: scott; Owner: -
+--
+
+ALTER TABLE ONLY lkw
+    ADD CONSTRAINT lkw_pkey PRIMARY KEY (kennzeichen);
+
+
+--
+-- TOC entry 2167 (class 2606 OID 16504)
+-- Name: pkw_pkey; Type: CONSTRAINT; Schema: scott; Owner: -
+--
+
+ALTER TABLE ONLY pkw
+    ADD CONSTRAINT pkw_pkey PRIMARY KEY (kennzeichen);
+
+
+-- Completed on 2015-03-01 09:12:04 CET
+
+--
+-- PostgreSQL database dump complete
+--
+

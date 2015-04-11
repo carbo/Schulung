@@ -1,0 +1,16 @@
+Schreiben Sie eine Klasse EasyRunnable, die ein Runnable ist.
+In ihrer run Methode gibt der Thread seinen Namen aus in Verbiundung mit Thread startet:::
+Die Ausgabe lautet also beispielsweise wie folgt:
+Thread gestartet:::t1
+Nach dem Starten warten der Thread 4000 Millisekunden bevor er ausgibt, dass er sich beendet:
+Thread beendet:::t1
+
+Die zu erzeugende Klasse ThreadJoinMain soll drei Threads von EasyRunnable starten
+und zwar wie folgt:
+
+Der 1. Thread wird gestartet
+Starte den 2. Thread nach 2 Sekunden des ersten oder wenn der erste beendet ist.
+Starte den 3. Thread nur wenn der erste beendet ist.
+
+Lasse danach alle 3 Threads sich beenden bevor der main Thread ausgibt.
+Alle threads sind beendet, der main thread jetzt auch!

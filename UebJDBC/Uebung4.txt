@@ -1,0 +1,4 @@
+c) Lesen Sie alle Datensätze der Tabelle Mitarbeiter aus. Führen Sie dazu eine entsprechende
+SELECT-Anweisung aus und durchlaufen Sie das zurückgelieferte ResultSet vollständig
+mit einer Schleife, wobei in jedem Schleifendurchlauf mittels Name und Gehalt der
+jeweiligen Mitarbeiter ausgegeben werden. 

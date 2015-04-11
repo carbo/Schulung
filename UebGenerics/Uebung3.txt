@@ -1,0 +1,18 @@
+Definieren Sie ein generisches Interface Equality<T>, 
+das eine Methode equal() vorgibt, um die Gleichheit von zwei Objekten zu prüfen, 
+die über ihre Referenzen im Methodenaufruf übergeben werden.
+
+Die Klasse PointEqual soll das mit der Klasse Point parametrisierte Interface 
+und dessen Methoden für Instanzen vom Typ der Java-Standard-Klasse Point 
+implementieren.
+
+Die Methode equal() gibt den boolean-Wert true zurück, 
+falls die Koordinaten der in ihrem Aufruf übergebenen Punkte, 
+die über die Feldnamen x und y der Klasse Point angesprochen werden können, 
+den gleichen Wert haben. Ansonsten returniert die Methode den boolean-Wert false.
+
+Definieren Sie ein Array von beliebigen Point-Instanzen und vergleichen Sie nacheinander deren Werte, 
+indem Sie die Methode equal() an einer Instanz der Klasse PointEqual aufrufen.
+
+Die generische Schnittstelle Equality<T> soll als externes Interface 
+ebenfalls in der Java-Datei PointEqual.java definiert werden.

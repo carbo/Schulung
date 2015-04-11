@@ -1,0 +1,7 @@
+Erstellen Sie eine Klasse GenericTypmitWildcard<T>, 
+die das gleiche Instanzfeld und die gleichen Methoden wie die Klasse GenericTyp1 
+aus der Aufgabe Uebung1 besitzt.
+Definieren Sie für diese Klasse eine zusätzliche Klassenmethode anzeige() 
+und benutzen Sie in Ihrer Deklaration Wildcardtypen, 
+um damit die von allen Instanzen der Klasse mit den unterschiedlichen Typen Integer,
+Float und Double aufgenommenen Objekte anzeigen zu können.

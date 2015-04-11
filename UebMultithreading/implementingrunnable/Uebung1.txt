@@ -1,0 +1,29 @@
+ThreadTest.java
+BigCompanyThread.java
+Schreiben Sie eine Klasse ThreadTest, die Thread erweitert.
+In der Methode, die als thread laufen kann, soll eine Schleife fünf mal durchlaufen werden.
+In der Schleife soll der Schleifendurchlauf ausgegeben werden sowie der Name des Threads, 
+der gerade läuft. Der Name des Threads kann über getName auf dem Thread-Objekt ausgegeben werden.
+Gestezt werden kann der Threadname über den überladenen KOnstruktor Thread(String)
+Am Ende jeden Threads soll ausgegeben werden. Test Finished for: {{Threadname}}
+Eine Klasse BigCompanyThread soll drei Threads mit unterschiedlichem Namen
+starten:
+Die Ausgabe könnte also wie folgt lauten:
+Loop 0: eBay
+Loop 0: Paypal
+Loop 0: Google
+Loop 1: eBay
+Loop 2: eBay
+Loop 1: Paypal
+Loop 1: Google
+Loop 2: Paypal
+Loop 3: eBay
+Loop 2: Google
+Loop 3: Paypal
+Loop 4: eBay
+Loop 4: Paypal
+Loop 3: Google
+Test Finished for: Paypal
+Test Finished for: eBay
+Loop 4: Google
+Test Finished for: Google

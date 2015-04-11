@@ -1,0 +1,64 @@
+Schreiben Sie eine Kontextklasse, die eine Methode sortDouble besitzt. Diese Methode soll je nach eingesetellter Sortiermethode die 
+Sortierung eines double-Arrays vornehmen. Mögliche Sortierweisen sind der QuickSort oder der BubbleSort.
+Lösen Sie diese Problematik mit Hilfe des Strategy Patterns. 
+Wahlweise können Sie gerne ein dritte Sortiermethodik hinzufügen.
+
+Zur Wiederholung:
+Um eine Liste mit Quicksort zu sortieren wird ein Pivotelement p
+ausgewählt und die Elemente der Liste in zwei neue Listen gespeichert, 
+mit der Eigenschaft, dass in der ersten Liste die Elemente kleiner oder gleich p 
+und in der zweiten Liste die Elemente größer p liegen. 
+Mit den beiden Listen wird wieder genauso verfahren.
+
+public void quicksort(int[] arr, int low, int high) {
+    	 
+		if (arr == null || arr.length == 0)
+			return;
+ 
+		if (low >= high)
+			return;
+ 
+		//nimm das pivot element
+		int middle = low + (high - low) / 2;
+		int pivot = arr[middle];
+ 
+		//links < pivot rechts > pivot
+		int i = low, j = high;
+		while (i <= j) {
+			while (arr[i] < pivot) {
+				i++;
+			}
+ 
+			while (arr[j] > pivot) {
+				j--;
+			}
+ 
+			if (i <= j) {
+				int temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+				i++;
+				j--;
+			}
+		}
+ 
+		//rekursiv sortieren von zwei Teillisten
+		if (low < j)
+			quicksort(arr, low, j);
+ 
+		if (high > i)
+			quicksort(arr, i, high);
+	}
+
+Bubblesort:
+Der BubbleSort-Algorithmus vergleicht der Reihe nach zwei benachbarte Elemente 
+einer n-elementigen Liste x und vertauscht sie, 
+falls sie nicht in der richtigen Reihenfolge vorliegen. 
+Ist er am Ende der Liste angekommen wird der Vorgang wiederholt.
+Der Algorithmus endet, wenn alle Elemente in der richtigen Reihenfolge vorliegen,
+ im letzten Durchgang also keine Vertauschoperationen mehr stattgefunden haben.
+ 
+ for (i=1 to n-1)
+	for (j=0 to n-i-1)
+		if (x[j] > x[j+1])
+   			vertausche x[j] und x[j+1]

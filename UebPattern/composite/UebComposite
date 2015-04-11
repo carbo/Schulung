@@ -1,0 +1,24 @@
+Definieren Sie eine Basisklasse Mitarbeiter, die Informationen über den Namen und das Gehalt eines Mitarbeiters enthält. Zudem definiert diese abstrakte Basisklasse Methoden zum Hinzufügen, Entfernen von Mitarbeitern sowie das Ausgeben von Informationen über eine print Methode.
+Eine getChild Methode, die über einen Index auf die Kinder zugreifen kann, schließt diese Basisklasse ab.
+Erstellen Sie eine Klasse Manager und eine Klasse Entwickler, die diese Basisklasse  implementieren.
+Manager können dabei Entwickler als Kindelemente enthalten. Entwickler enthalten keine Kindelemente haben aber ebenso wie Manager ein Gehalt und einen Namen.
+Bilde in einer Testklasse folgende Struktur ab:
+Es gibt zwei Entwickler Uwe und Dirk(Gehalt beliebig), die dem Manager Peter unterstehen.
+Zudem gibt es einen GeneralManager, der einen weiteren Entwickler Tim unter sich hat aber ebenfalls Vorgesetzter von Peter ist.
+
+Der Aufruf von print auf dem GeneralManager sollfolgendes ergeben:
+-------------
+Name =Tim
+Gehalt =50000.0
+-------------
+-------------
+Name =Michael
+Gehalt =20000.0
+-------------
+-------------
+Name =Peter
+Gehalt =25000.0
+-------------
+-------------
+Name =Uwe
+Gehalt =10000.0

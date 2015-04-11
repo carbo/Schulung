@@ -1,0 +1,23 @@
+Schreiben Sie ein Klasse Counter, die eine nicht statische Methode countPrint enthält
+und in ihr wird eine Variable von 5 runtergezählt bis 1 und wie folgt ausgegeben:
+Counter   ---   {{count}}
+
+Schreiben Sie eine weitere von Thread abgeleitete Klasse, die sich um das Starten
+eines Thread kümmert und dabei in jedem Thread die Methode countPrint von Counter aufruft.
+
+Eine dritte Klasse CounterThreadExecution startet zwei dieser Threads.
+Die Ausgabe des gesamten Programms soll lauten:
+Starting Thread - 1 
+Starting Thread - 2 
+Counter   ---   5
+Counter   ---   4
+Counter   ---   3
+Counter   ---   2
+Counter   ---   1
+Thread Thread - 1  exiting.
+Counter   ---   5
+Counter   ---   4
+Counter   ---   3
+Counter   ---   2
+Counter   ---   1
+Thread Thread - 2  exiting.

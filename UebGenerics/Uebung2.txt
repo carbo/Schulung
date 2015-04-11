@@ -1,0 +1,4 @@
+Definieren Sie analog zur Uebung1 eine generische Klasse GenericTyp2<T>
+deren Konstruktor eine Referenz auf ein Objekt vom Typ des Klassenparameters
+T übergeben bekommt. Damit wird die Methode setObjekt() zur Aufnahme
+von Objekten nicht mehr benötigt. 

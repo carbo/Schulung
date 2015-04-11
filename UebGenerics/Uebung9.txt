@@ -1,0 +1,5 @@
+Wird es bei folgenden Zeilen einen Compiler-Fehler geben? 
+Wie erklärt sich das Verhalten?
+
+Collection<?> list = new ArrayList<String>();
+list.add( "Java Foundation Generics" );

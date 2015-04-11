@@ -1,0 +1,14 @@
+Eine generische Klasse GenericTyp1<T> definiert eine Membervariable objekt
+vom Typ des Klassenparameters T.
+Die Klasse soll nun über den parameterlosen Standard-Konstruktor verfügen
+und zur Aufnahme und Bereitstellung von Objekten, die Methode setObjekt()
+und getObjekt() definieren.
+
+Der Typparameter wird durch einen realen Typ eingetauscht, sobald eine 
+Instanz der Klasse erzeugt wird.
+Bilden Sie Instanzen der Klasse vom Typ Integer und String und zeigen
+Sie, dass eine Instanz der Klasse vom Typ Integer nur Objekte vom Typ Integer aufnehmen kann.
+Das gleiche gilt für Instanzen vom Typ String.
+Definieren Sie eine Methode getObjektTyp(), um den Datentyp der erzeugten
+Objekte zu ermitteln und zeigen Sie diesen am Bildschirm an.
+Hinweis: objekt.getClass().getName()

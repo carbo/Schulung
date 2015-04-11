@@ -1,0 +1,37 @@
+Message
+Waiter
+Notifier
+WaitNotifyExample
+Schreiben Sie eine Klasse Message die in einem privaten String member eine Message hält 
+und die entsprechenden Zugriffsmethoden zur Verfügung stellt.
+Die Waiter Klasse implementiert Runnable. Ein Waiter-Objekt wartet auf einen Notifier-Objekt, 
+welches Aufgaben auf einem Message-Objekt erledigt. Dies soll mithilfe eines synchronized Blocks 
+auf dem Message-Objekt geschehen. In diesem synchronized Block rufen wir die wait-Methode auf dem Message-Objekt.
+Die Notifier-Klasse implementiert ebenfalls das Runnable interface. Das Notifier-Objekt 
+schläft für 3 Sekunden. Danach modifizeirt es die Message und benachrichtigt dann den wartenden Thread,
+dass er weitermachen kann. Das ganze soll ebenfalls in einem synchronized-Block(synchronized auf Message)
+erfolgen. Das notify wird ebenfalls auf dem Message Objekt aufgerufen.
+
+Die Klasse WaitNotifyExample erstellt in seiner main-Mathode eine Message-Objekt. Zudem erstellt es ein Waiter-Objekt 
+mit einem Message-Objekt. Der Waiter-Thread wird erzeugt und gestartet.
+Danach erzeugt es ein Notifier-Objekt mit der Message. Auch der Notifier-Thread wird erzeugt und gestartet.
+
+Der Ouput des Programms könnte sich so darstellen:
+All the threads are started
+notifier started
+waiter waiting to get notified at time:Mon Feb 16 15:56:31 CET 2015
+waiter1 waiting to get notified at time:Mon Feb 16 15:56:31 CET 2015
+waiter waiter thread got notified at time:Mon Feb 16 15:56:32 CET 2015
+waiter processed: notifier Notifier work done
+waiter1 waiter thread got notified at time:Mon Feb 16 15:56:32 CET 2015
+waiter1 processed: notifier Notifier work done
+
+
+
+
+
+
+
+
+
+

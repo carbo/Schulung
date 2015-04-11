@@ -1,0 +1,12 @@
+Schreiben Sie eine Klasse SumTask, die ein Callable implementiert.
+Der Rückgabetyp des Callable soll ein Integer sein.
+Die Klasse SumTask nimmt in Ihrem Konstruktor ein Integer entgegen und summiert sobald 
+ihm Rechenzeit gegeben wird alle Werte bis zu diesem Integer auf und gibt das Ergebnis zurück. Heißt:
+Übergabe: 3
+ 1+2+3
+ 
+In einer Klasse CallableTest benutzen Sie mit Hilfe des ExecutorService dieses Callable
+und geben das Ergebnis aus: hier 6
+Der ExecutorService darf ein SingleThreadExecutor sein.
+
+ 

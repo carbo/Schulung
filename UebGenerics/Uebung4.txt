@@ -1,0 +1,12 @@
+Erzeuge eine ArrayList, die nur String-Objekte aufnehmen kann. Fülle sie mit ein paar Strings.
+Erzeuge eine ArrayList, die nur Integer-Objekte aufnehmen kann. Fülle sie mit ein paar Integern.
+
+Laufe sie diese mit dem erweiterten for ab.
+
+Rufen Sie auf der compilierten Klasse javap -c auf und schauen Sie sich den output an.
+Alternativ können Sie auch gerne einen Decompiler unter 
+http://varaneckas.com/jad/
+
+runterladen und damit eine Decompilierung auf der .class Datei starten auf der Console. 
+jad erzeugt ein .jad Datei, die dann den
+Inhalt des Compilats anzeigt.

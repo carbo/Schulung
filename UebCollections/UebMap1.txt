@@ -1,0 +1,10 @@
+Schreibe eine Methode Map convertToMap(String[][]), 
+die ein zweidimensionales Feld in eine java.util.Map konvertiert. Ein Beispiel:
+
+Map<String,String> colorMap = convertToMap( new String[][]{
+  {"rot",  "#FF0000"},
+  {"grün", "#00FF00"},
+  {"blau", "#0000FF"}
+} );
+System.out.println( colorMap );   // {blau=#0000FF, grün=...
+Der erste Eintrag im Feld soll der Schlüssel, der zweite der Wert sein.

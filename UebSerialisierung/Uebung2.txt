@@ -1,0 +1,15 @@
+Schreiben Sie eine Klasse Mitarbeiter mit den Instanzvariablen name(String), adresse(String),
+stimmung(String) und Nummer(int). Das Objekt soll serialiserbar sein außer dem Attribut Stimmung.
+Zudem schreiben Sie eine Klasse SerialisierDemo, welches ein Objekt von Mitarbeiter erzeugt und daraufhin in ein 
+Verzeichnis /tmp/mitarbeiter.ser seralisiert.
+ 
+Daraufhin schreiben Sie eine Klasse DeserialiserDemo, welche die Datei /tmp/mitarebeiter.ser
+in ein Objekt Mitarbeiter ausliest und die Attribute auf der Konsole ausgibt.
+Die Ausgabe könnte wie folgt lauten:
+
+Deserialized Mitarbeiter...
+Name: Max Mustermann
+Address: Musterstrasse 1
+Stimmung: null
+Number: 101
+ 

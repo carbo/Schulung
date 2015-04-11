@@ -1,0 +1,12 @@
+1.) Modifizieren Sie das unter Übung 3 erstellte Servlet in der Art, 
+dass bei erfolgreichem Login die Liste von Autos erscheint, 
+die in der Datenbanktabelle PKW hinterlegt sind. 
+Die PKW Tabelle hat die Attribute kennzeichen, preis, frei 
+Hinter der Auflistung der PKWs sollen zwei Buttons stehen, 
+Ausleihen und Zurückgeben.
+Wenn der PKW bereits ausgeliehen ist, 
+soll der Button "Ausleihen" deaktiviert sein. 
+Wenn er nicht ausgelieghen ist, soll der "Zurückgeben" Button ausgegraut sein. 
+Lösen Sie dieses Problem mit Hilfe von JSPs.
+2.)Deployen Sie Ihre Ergebnisse mit Hilfe des ant-Skriptes ant war, deploy
+Öffnen Sie die Applikation http://localhost:8080/autovermietung

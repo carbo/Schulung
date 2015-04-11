@@ -1,0 +1,22 @@
+Obere Schranke ("upper bound wildcard") für Wildcardtypen
+
+Definieren Sie analog zur Klasse GenericTypmitWildcard aus der Uebung5 
+eine neue Klasse GenericTypmitExtend<T extends Number>. 
+Dies soll in ihrer Methode anzeige () als Methoden- und Rückgabe-Parameter 
+eine Referenz vom Typ der eigenen Klasse zulassen, 
+die als Typparameter alle Typen von Klassen, 
+welche die Java-Standard-Klasse Number erweitern, definiert.
+
+Definieren Sie eine zusätzliche Methode add()für diese Klasse, 
+die zwei Referenzen vom gleichen Typ wie der Parameter der Methode anzeige () 
+übergeben bekommt. 
+Sie liest mit Hilfe der Methode getObjekt() der Klasse die Objekte, 
+welche in den Instanzen der Klasse von unterschiedlichen Typen hinterlegt wurden 
+und für diese mit Hilfe der Methode getValue() der abstrakten Klasse Number 
+deren nummerischen Wert.
+ Die von der Klasse Number abgeleiteten Klassen Integer, Float und Double implementieren alle diese Methode. Die so ermittelten nummerischen Werte sollen addiert und als int-Wert von der Methode zurückgegeben werden.
+
+Erzeugen Sie in der main()-Methode der Klasse Instanzen von zugelassenen 
+generischen Typen, wie GenericTypmitExtend<Integer>, GenericTypmitExtend<Float> 
+oder GenericTypmitExtend<Double> und rufen Sie für diese die Methoden der Klasse 
+auf.

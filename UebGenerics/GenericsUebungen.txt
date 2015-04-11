@@ -1,0 +1,75 @@
+Aufgabe 8.4
+Generische Wildcardtypen
+
+Erstellen Sie eine Klasse GenericTypmitWildcard<T>, 
+die das gleiche Instanzfeld und die gleichen Methoden wie die Klasse GenericTyp1 
+aus der Aufgabe 8.1 besitzt.
+Definieren Sie für diese Klasse eine zusätzliche Klassenmethode anzeige() 
+und benutzen Sie in Ihrer Deklaration Wildcardtypen, 
+um damit die von allen Instanzen der Klasse mit den unterschiedlichen Typen Integer,
+Float und Double aufgenommenen Objekte anzeigen zu können.
+
+Hinweise für die Programmierung:
+Dass bei der Verwendung eines parametrisierten Datentyps später nur Objekte 
+des beim Erzeugen einer Instanz der Klasse verwendeten Datentyps genutzt 
+werden können, 
+wäre ohne Erweigerungsmöglichkeiten eine Einschränkung gegenüber 
+vorherigen Versionen von Java. 
+Wildcards können aber nicht in Klassendefinitionen verwendet werden, 
+eine Klassendeklaration mit class GenericTypmitWildcard<?> 
+führt zum Compilerfehler "Identifier expected". 
+Sie können als Platzhalter in der Definition von Referenzen vom Typ 
+der KLasse genutzt werden, 
+die Referenzen von Instanzen der Klasse von einem bestimmten Typ zugewiesen 
+bekommen, oder als Rarameter bzw. Rückgabewert in Methodendefinitionen dienen.
+
+Einer Referenzvariablen vom Typ <?> kann die Referenz einer Instanz 
+der Klasse von einem beliebigen Typ zugewiesen werden, 
+nur kann auf diese im Nachhinein nicht schreibend zugegriffen werden.
+Weil der Compiler den Typ, den man hinzufügen möchte, nicht erkennt, 
+führt dies zu einem Compilerfehler. 
+Ein lesbarer Zugriff wird jedoch erlaubt und die zurückgegebene Instanz 
+hat den Typ Object.
+
+
+Aufgabe 8.5
+Obere Schranke ("upper bound wildcard") für Wildcardtypen
+
+Definieren Sie analog zur Klasse GenericTypmitWildcard aus der Aufgabe 8.4 
+eine neue Klasse GenericTypmitExtend<T extends Number>. 
+Dies soll in ihrer Methode anzeige () als Methoden- und Rückgabe-Parameter 
+eine Referenz vom Typ der eigenen Klasse zulassen, 
+die als Typparameter alle Typen von Klassen, 
+welche die Java-Standard-Klasse Number erweitern, definiert.
+
+Definieren Sie eine zusätzliche Methode add()für diese Klasse, 
+die zwei Referenzen vom gleichen Typ wie der Parameter der Methode anzeige () 
+übergeben bekommt. 
+Sie liest mit Hilfe der Methode getObjekt() der Klasse die Objekte, 
+welche in den Instanzen der Klasse von unterschiedlichen Typen hinterlegt wurden 
+und für diese mit Hilfe der Methode getValue() der abstrakten Klasse Number 
+deren nummerischen Wert.
+ Die von der Klasse Number abgeleiteten Klassen Integer, Float und Double implementieren alle diese Methode. Die so ermittelten nummerischen Werte sollen addiert und als int-Wert von der Methode zurückgegeben werden.
+
+Erzeugen Sie in der main()-Methode der Klasse Instanzen von zugelassenen 
+generischen Typen, wie GenericTypmitExtend<Integer>, GenericTypmitExtend<Float> 
+oder GenericTypmitExtend<Double> und rufen Sie für diese die Methoden der Klasse 
+auf.
+
+
+Aufgabe 8.8
+Generische Interfaces
+
+Definieren Sie ein generisches Interface Equality<T>, das eine Methode equal() vorgibt, um die Gleichheit von zwei Objekten zu prüfen, die über ihre Referenzen im Methodenaufruf übergeben werden.
+
+Die Klasse PointEqual soll das mit der Klasse Point parametrisierte Interface und dessen Methoden für Instanzen vom Typ der Java-Standard-Klasse Point implementieren.
+
+Die Methode equal() gibt den boolean-Wert true zurück, falls die Koordinaten der in ihrem Aufruf übergebenen Punkte, die über die Feldnamen x und y der Klasse Point angesprochen werden können, den gleichen Wert haben. Ansonsten returniert die Methode den boolean-Wert false.
+
+Definieren Sie ein Array von beliebigen Point-Instanzen und vergleichen Sie nacheinander deren Werte, indem Sie die Methode equal() an einer Instanz der Klasse PointEqual aufrufen.
+
+Die generische Schnittstelle Equality<T> soll als externes Interface ebenfalls in der Java-Datei PointEqual.java definiert werden.
+
+Rufen Sie den Decompiler javap für die Datei PointEqual.class auf, damit die Brückenmethode angezeigt wird, welche vom Compiler generiert wurde, um der Methodensignatur des Interface zu genügen.
+
+ 

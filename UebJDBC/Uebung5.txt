@@ -1,0 +1,6 @@
+d) Erweitern Sie das unter c) beschriebene Auslesen der Datensätze so, dass auch die Spaltennamen
+ausgegeben werden. Geben Sie dabei die Namen der Spalten nicht fest an, sondern
+lesen Sie die Werte aus dem ResultSet aus.
+Hinweis: Verwenden Sie dazu die Methoden ResultSet.getMetaData() sowie
+ResultSetMetaData.getColumnCount() und ResultSetMetaData getColumnName(int
+column). 

@@ -1,0 +1,10 @@
+Schreiben Sie unter Verwendung von JDBC ein Java-Programm, dass eine Datenbankverbindung
+auf- und wieder abbaut. Benutzen Sie dazu folgende Verbindungsparameter:
+- Name des Treibers: org.postgresql.Driver
+- Hostname des Datenbankservers: localhost
+- Portnummer: 5432
+- Name der Datenbank: firma
+- Username: scott
+-Password: tiger
+
+Wählen Sie einmal die Variante über Driver Manager und einmal die Variante über DataSource. 
