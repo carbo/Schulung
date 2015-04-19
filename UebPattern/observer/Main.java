@@ -8,7 +8,7 @@ public class Main {
 		hh.registerObserver(new Abonnent("Dirk"));
 		hh.registerObserver(new Abonnent("Pter"));
  
-		hh.addNews("Pilotentsreik");
+		hh.addNews("Bahnstreik");
 		hh.addNews("Schalke verliert 5:0");
 	}
 }
