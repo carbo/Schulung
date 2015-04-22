@@ -9,6 +9,6 @@ public class Main {
 		hh.registerObserver(new Abonnent("Pter"));
  
 		hh.addNews("Bahnstreik");
-		hh.addNews("Schalke verliert 5:0");
+		hh.addNews("Bayern gewinnt 6:1s");
 	}
 }
